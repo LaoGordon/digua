@@ -1,0 +1,21 @@
+patrol2_node:
+  ros__parameters:
+    waypoints_file: /home/sunrise/ws_yolo_patrol/src/yolo_patrol_ros2/config/patrol_waypoints.yaml
+    photo_dir: /home/sunrise/Desktop/patrol_shot
+    record_file: /home/sunrise/ws_patrol2/patrol2_records.jsonl
+    color_topic: /camera/camera/color/image_raw
+    detections_topic: /fire/detections
+    map_frame: map
+    base_frame: base
+    nav_action_name: /navigate_to_pose
+    nav_goal_timeout_sec: 180.0
+    nav_server_timeout_sec: 0.0
+    tf_timeout_sec: 5.0
+    spray_delay_sec: 2.0
+    aim_stop_settle_sec: 0.8
+    inter_waypoint_pause_sec: 1.0
+    return_to_start: true
+    pump_workspace: /home/sunrise/ws_pump
+    pump_launch_timeout_sec: 20.0
+    dog_ip: 192.168.137.120
+    dog_port: 43893

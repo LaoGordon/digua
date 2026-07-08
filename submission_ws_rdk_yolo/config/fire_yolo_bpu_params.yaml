@@ -1,0 +1,22 @@
+fire_yolo_bpu_node:
+  ros__parameters:
+    model_path: /home/sunrise/ws_rdk_yolo/fire_yolov8n_s100p.hbm
+    color_width: 640
+    color_height: 480
+    camera_fps: 30
+    conf_thres: 0.25
+    iou_thres: 0.45
+    depth_min_valid_m: 0.10
+    depth_max_valid_m: 5.00
+    display: true
+    display_window_name: fire_yolo_bpu
+    camera_mode: ros
+    camera_detect_timeout_sec: 10.0
+    frame_id: camera_color_optical_frame
+    fire_class_name: fire
+    detections_topic: /fire/detections
+    point_topic: /fire/point
+    pose_topic: /fire/pose
+    color_topic: /camera/camera/color/image_raw
+    depth_topic: /camera/camera/depth/image_rect_raw
+    camera_info_topic: /camera/camera/color/camera_info

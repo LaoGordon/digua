@@ -1,0 +1,13 @@
+<library path="neural_path_planner">
+  <class
+    name="neural_path_planner/NeuralPathPlanner"
+    type="neural_path_planner::NeuralPathPlanner"
+    base_class_type="nav2_core::GlobalPlanner">
+    <description>
+      BPU-accelerated neural global path planner. Runs a U-Net guidance map
+      inference (via Horizon BPU runtime or ONNX Runtime fallback) on the static
+      costmap and extracts a collision-checked path. Falls back to a straight-line
+      if the model is unavailable.
+    </description>
+  </class>
+</library>

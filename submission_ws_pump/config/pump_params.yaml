@@ -1,0 +1,4 @@
+pump_node:
+  ros__parameters:
+    pin: 37
+    spray_duration_sec: 5.0
